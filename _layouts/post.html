@@ -1,0 +1,86 @@
+<!doctype>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <header class="header" data-pjax>
+      <a href="/" class="home js-head">&nbsp;</a>
+    </header>
+
+    <div class="wrapper">
+      {% unless page.date %}
+      <div class="sidebar">
+        <h3>
+          Hello hi!
+        </h3>
+        <p>
+          I'm Mu-An. I love building things with code.
+        </p>
+        <p>
+          I work at <a href="https://github.com/"><mark>GitHub</mark></a> as a designer and developer.
+          I co-founded and built <a href="https://www.zeczec.com/"><mark>zeczec</mark></a>, a crowdfunding site.
+        </p>
+        <h3 class="title-pictures">Pictures with fun facts.</h3>
+        <div class="photos">
+          <a href="https://instagram.com/p/S1diYTJarJ/" class="p-1 photo" target="_blank"><img alt="I lived in the U.K. for 5 years." src="/images/brixton.jpg"></a>
+          <a href="https://instagram.com/p/rDq_yxpal4/" class="p-2 photo" target="_blank"><img alt="A Taiwanese breakfast item – danbing." src="/images/danbing.jpg"></a>
+          <a href="https://instagram.com/p/0PGc06pauS/" class="p-3 photo" target="_blank"><img alt="I used to think Club Mate is overrated, I was wrong." src="/images/clubmate.jpg"></a>
+          <a href="https://instagram.com/p/joCAsOJakQ/" class="p-4 photo" target="_blank"><img alt="I started playing bass 10 years ago." src="/images/bass.jpg"></a>
+          <div class="caption c-1">I lived in England from 2008 to 2013.</div>
+          <div class="caption c-2">A Taiwanese breakfast item – danbing.</div>
+          <div class="caption c-3">I used to think Club Mate is overrated, I was wrong.</div>
+          <div class="caption c-4">I started playing bass 10 years ago.</div>
+        </div>
+
+        <h3 class="title-contact">Contact &amp; Interwebs.</h3>
+        <p>
+          Via twitter <a href="https://twitter.com/muanchiou">@muanchiou</a> or github <a href="https://github.com/muan">@muan</a>. Must-be-email emails should be sent to hi#muan.co.
+        </p>
+        <p>
+          You can subscribe to my <a href="https://tinyletter.com/muan">newsletters of fun facts</a> to find out what I'm up to, or <a href="http://feeds.feedburner.com/muan">this blog's feed</a>.
+        </p>
+        <p>
+          I'm also on
+          <a href="https://dribbble.com/muan">Dribbble</a>,
+          <a href="https://instagram.com/muanchiou">Instagram</a>, and
+          <a href="https://speakerdeck.com/muan">Speaker Deck</a>.
+        </p>
+      </div>
+      {% endunless %}
+      <div class="column js-content">
+        {% if page.date %}
+          <article>
+            <header class="post-header">
+              <h3 class="post-title">{{ page.title }}</h3>
+              {% if page.date %}
+                <small>
+                  {{ page.date | date_to_string }} -
+                  by <a href="https://twitter.com/muanchiou" target="_blank">@muanchiou</a>
+                </small>
+              {% endif %}
+            </header>
+            {{ content }}
+          </article>
+          <div class="pagination" data-pjax>
+            {% if page.previous %}
+              <a class="page-nav" href="{{ page.previous.url }}" id="js-previous-post">
+                &lt; {{ page.previous.title }}
+              </a>
+            {% endif %}
+            {% if page.next %}
+              <a class="page-nav" href="{{ page.next.url }}" id="js-next-post">
+                {{ page.next.title }} &gt;
+              </a>
+            {% endif %}
+          </div>
+        {% else %}
+          {{ content }}
+        {% endif %}
+      </div>
+    </div>
+    <footer class="footer">
+      The end.
+    </footer>
+  </body>
+</html>

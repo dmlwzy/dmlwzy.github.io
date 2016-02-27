@@ -29,7 +29,16 @@
           I hope that through the simple interface, to give users the best experience.
         <h3 class="title-pictures">Think and Work</h3>
         <div class="photos">
-          <a href=<a href="{{ post.url }}" class="p-1 photo" target="_blank"><img alt="I lived in the U.K. for 5 years." src="/images/brixton.png"></a>
+          <ul class="list" data-pjax>
+{% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}">
+      {{ post.title }}
+      <time>{{ post.date | date: "%b %d, %Y" }}</time>
+    </a>
+  </li>
+  {% endfor %}
+</ul><img alt="I lived in the U.K. for 5 years." src="/images/brixton.png"></a>
           <a href="https://instagram.com/p/rDq_yxpal4/" class="p-2 photo" target="_blank"><img alt="A Taiwanese breakfast item – danbing." src="/images/danbing.jpg"></a>
           <a href="https://instagram.com/p/0PGc06pauS/" class="p-3 photo" target="_blank"><img alt="I used to think Club Mate is overrated, I was wrong." src="/images/clubmate.jpg"></a>
           <a href="https://instagram.com/p/joCAsOJakQ/" class="p-4 photo" target="_blank"><img alt="I started playing bass 10 years ago." src="/images/bass.jpg"></a>

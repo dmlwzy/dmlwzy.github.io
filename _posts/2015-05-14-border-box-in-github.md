@@ -83,7 +83,7 @@ title: 麦粒-其产品原型设计的交互思考过程（一）
 
 ---
 
-    微记原型图效果（第一稿）  
+微记原型图效果（第一稿）  
     ![layout borken by border-boxing](/images/20150514-box-model.png)
 
 ---
@@ -121,7 +121,7 @@ title: 麦粒-其产品原型设计的交互思考过程（一）
 
 ---
 
-下面就是我第二版改版的设计原型图
+> 下面就是我第二版改版的设计原型图
 ![layout borken by border-boxing](/images/20150514-box-model.png)
 
 ---

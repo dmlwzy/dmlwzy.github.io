@@ -1,11 +1,15 @@
 ---
 layout: post
-title: 麦粒-其产品原型设计的交互sikao
+title: 麦粒-其产品原型设计的交互思考过程（一）
 ---
 
 ![layout borken by border-boxing](/images/20150514-box-model.png)
 
-This is a long overdue post about how we border-boxed all the things on github.com back in 2013. It was one of my first projects after joining GitHub.
+当我拿到产品或者界面功能结构图时，我首先会做以下三点考虑：
+1st：该产品定位是什么，我希望用户拥有什么样的体验【至关重要，考虑到每一个细节问题】
+2nd：对界面逻辑功能分析，我需要和那些功能打交道
+3rd：竞品分析，或者相似功能界面设计、交互分析
+三点思考内容，不分顺序，在思考的过程中，很多时候三点是相互影响、相互渗透的
 
 When @paulirish's [border-box post](http://www.paulirish.com/2012/box-sizing-border-box-ftw/) first came out, it was discussed internally as something that "we should probably do." But then we didn't, because:
 

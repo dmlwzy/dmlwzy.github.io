@@ -1,6 +1,6 @@
 ---
 layout: post
-title: border-box All The Things
+title: 麦粒-其产品原型设计的交互sikao
 ---
 
 ![layout borken by border-boxing](/images/20150514-box-model.png)

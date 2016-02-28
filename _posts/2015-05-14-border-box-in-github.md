@@ -65,7 +65,14 @@ title: 麦粒-其产品原型设计的交互思考过程（一）
  <br><mark>日历botton</mark>
         <br>因为将当天日期放在了每天最新微记的上面，所以，便将日历放在了其旁边，同一性质，都在于根据时间查看当天微记内容
 
+---
 
+上述一段，就是我对微记第一版本的考虑。
+  <br>无论是移动端界面、还是PC端界面，都需要对什么是简单的体验有一个明确认识。
+  <br>关于建立这种认识，我很喜欢<mark>Gildes Colborne</mark>在<mark>《简约至上--交互设计四策略》</mark>提到的的方法，在这里复述一下，和大家共勉，希望能给读者带来启发和帮助！
+        **我有两种方式 来建立这种认识。
+        简单而迅速的方式是用一句话把它写出来，包括我要设计什么，要遵循哪几条设计规则，尽量使用最简单的术语。然后，在面对设计功能对照表而犹豫不决时，我就会暂时停下来，问我自己：“做这个表是为了什么？”这个描述是我判断设计是否简单的基准。在做一些比较小的设计（大型网络中的一个页面）或者在我多多少少了解到设计背景的情况下，这种方式都是很奏效的。
+        更好而花费时间更长的方式是描述我希望用户拥有什么样的体验。具体一点说，就是描述用户的使用背景，以及我的设计怎么满足用户在该情下的需求。在设计一些大型啊项目时（比如整个网站或者移动设备），这种方式很适合，因为我这种方式可以让我深入透彻地考虑到每一个细节。**
 When @paulirish's [border-box post](http://www.paulirish.com/2012/box-sizing-border-box-ftw/) first came out, it was discussed internally as something that "we should probably do." But then we didn't, because:
 
 > Wouldn't it require we rewrite every element with a width/border/padding?

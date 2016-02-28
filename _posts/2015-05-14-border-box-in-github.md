@@ -71,8 +71,7 @@ title: 麦粒-其产品原型设计的交互思考过程（一）
   <br>无论是移动端界面、还是PC端界面，都需要对什么是简单的体验有一个明确认识。
   <br>关于建立这种认识，我很喜欢<mark>Gildes Colborne</mark>在<mark>《简约至上--交互设计四策略》</mark>提到的的方法，在这里复述一下，和大家共勉，希望能给读者带来启发和帮助！
 
-        > 
-        <br>**我有两种方式 来建立这种认识。
+<br>**我有两种方式 来建立这种认识。
         <br>简单而迅速的方式是用一句话把它写出来，包括我要设计什么，要遵循哪几条设计规则，尽量使用最简单的术语。然后，在面对设计功能对照表而犹豫不决时，我就会暂时停下来，问我自己：“做这个表是为了什么？”这个描述是我判断设计是否简单的基准。在做一些比较小的设计（大型网络中的一个页面）或者在我多多少少了解到设计背景的情况下，这种方式都是很奏效的。
         <br>更好而花费时间更长的方式是描述我希望用户拥有什么样的体验。具体一点说，就是描述用户的使用背景，以及我的设计怎么满足用户在该情下的需求。在设计一些大型啊项目时（比如整个网站或者移动设备），这种方式很适合，因为我这种方式可以让我深入透彻地考虑到每一个细节。**
 
@@ -130,46 +129,8 @@ title: 麦粒-其产品原型设计的交互思考过程（一）
 
 > 第二版针对第一版出现的严重问题，做了很多的而改进，但依然存在或多或少的问题，仍然需要不断怀疑和提高，针对第二版的改进，我会在<mark>《麦粒-其产品原型设计的交互思考过程（二）》</mark>中继续更新说明。
 
-
-When @paulirish's [border-box post](http://www.paulirish.com/2012/box-sizing-border-box-ftw/) first came out, it was discussed internally as something that "we should probably do." But then we didn't, because:
-
-> Wouldn't it require we rewrite every element with a width/border/padding?
-<br>
-
-> I’m pretty sure the internet would break in half if we added that rule in today.
-
-The main problem was that it wasn't easy to find out which bit of code would need to be changed just by reading them. It felt at the time like a very big refactor project, and just [too big](http://markdotto.com/2014/07/23/githubs-css/#two-bundles) for any single person to tackle.
-
-But every once in a while, you get a new designer onboard, say, someone like me, trying to disturb the water. In my first month, I sent at least 5 pull requests trying to fix box-model weirdnesses in `github/github`.
-
-**We really need it.**
-
-I learned that the rule was something that all the CSS-writers working in the github.com code base want, and we just needed to find a way to do it and not break the internet (well, github.com) at the same time.
-
-After some deliberations, we decided that we would team-ship the rule `* { box-sizing: border-box; }` to just a group of people that volunteered to be in the `@github/box-model-shipperheros` team. These people would live with the broken layout everyday as we use GitHub to build GitHub, and try to fix them one at a time. The code looked like this:
-
-{% highlight erb linenos %}
-<%# in the head of application.erb %>
-<%= render :partial => "box_model_css" if team_access?(:box_model) %>
-
-<%# in _box_model_css.erb %>
-<style type="text/css"> * { box-sizing: border-box; } </style>
-{% endhighlight %}
-
-While adding a fix, we would slap on <code>&#64;include box-sizing</code>, with the idea that when we're done, we'd remove them all.
-
-![diagram on the confusing negative margin border padding ](/images/20150514-notification.png)
-
-![holy crap broke the internet](/images/20150514-holy-crap.png)
-
-The whole process took about 4 months, before we decided that we had probably covered 99.9% of the website and that it was safe to ship.
-
-![list of pull requests and issues related to fixing box model](/images/20150514-box-model-prs.png)
-
-And then, we all became happier human beings.
-
 :tada:
 
 ---
 
-[Find out more about GitHub's CSS by @mdo](http://markdotto.com/2014/07/23/githubs-css/).
+[敬请关注《麦粒-其产品原型设计的交互思考过程（二）》](http://wangziyue.com/).

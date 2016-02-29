@@ -89,8 +89,7 @@ title: 麦粒-其产品原型设计的交互思考过程（一）
 ---
 
 <br>微记原型图交互效果动图（第一稿）
-
-<br>![layout borken by border-boxing](/images/dongtu.gif)
+![layout borken by border-boxing](/images/dongtu.gif)
 
 ---
 

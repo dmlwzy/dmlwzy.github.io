@@ -74,7 +74,7 @@ mark {
 }
 
 div, a, img {
-  ;
+  box-sizing: border-box;
 }
 
 .sidebar,
@@ -97,7 +97,7 @@ div, a, img {
 }
 
 .wrapper {
-  max-width: 660px;
+  max-width: 800px;
 
   &:after {
     content: "";

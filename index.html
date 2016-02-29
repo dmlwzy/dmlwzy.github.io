@@ -2,20 +2,59 @@
 layout: post
 ---
 
-<h3 class="title-works">Related websites.</h3>
+<h3 class="title-works">Fun open source projects.</h3>
 <ul class="list">
   <li>
-    <a href="http://qitiandasheng.zcool.com.cn" target="_blank">
-      站酷个人主页
+    <a href="https://github.com/muan/romanize-names" target="_blank">
+      romanize-names
     </a><br>
     Romanizing Traditional Chinese / Taiwanese names. There are 4 different spellings for my surname, some more popular than others. People often assume I typoed. NO, I DIDN'T.
   </li>
   <li>
-    <a href="https://www.behance.net/dmlwzy" target="_blank">
-      Behance个人主页
+    <a href="http://github.com/muan/mojibar/releases" target="_blank">
+      mojibar
     </a><br>
     Just like my <a href="http://emoji.muan.co" target="_blank">emoji searcher</a>, but as a menubar app. <a href="https://github.com/muan/mojibar" target="_blank">code</a>.
   </li>
- 
+  <li>
+    <a href="http://muan.co/emoji-minesweeper" target="_blank">
+      emoji-minesweeper
+    </a><br>
+    💣💣💣💣 most fun project of the year 2015. <a href="https://github.com/muan/emoji-minesweeper" target="_blank">code</a>.
+  </li>
+  <li>
+    <a href="https://github.com/muan/github-gmail" target="_blank">
+      github-gmail
+    </a><br>
+    A Chrome/Firefox extension that adds shortcuts for links in your GitHub notifications in Gmail.
+  </li>
+  <li>
+    <a href="http://emoji.muan.co" target="_blank">
+      emoji
+    </a><br>
+    Search engine for emoji using whatever keywords you can think of. No one remembers what 🔪 is called. <a href="https://github.com/muan/emoji" target="_blank">code</a>.
+  </li>
+  <li>
+    <a href="https://megamoji.muan.co" target="_blank">
+      megamoji
+    </a><br>
+    Microsoft Paint but with emoji. <a href="https://github.com/muan/megamoji" target="_blank">code</a>.
+  </li>
+  <li>
+    <a href="https://github.com/muan/submarine" target="_blank">
+      submarine
+    </a><br>
+    A node module that generates an index and content pages from a directory of markdown files. <del>Basically Jekyll but in node</del>.
+  </li>
 </ul>
-
+<h3>Writings.</h3>
+<ul class="list" data-pjax>
+{% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}">
+      {{ post.title }}
+      <time>{{ post.date | date: "%b %d, %Y" }}</time>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2014-07-22
+date: 2016-02-22
 title: UI界面展示
 ---
 
@@ -8,11 +8,10 @@ title: UI界面展示
 
 ---
 
-In mid-march online. :tada:
+In mid-march online. 
 
-<3,<br>
-Mu-An
+:tada:
 
 ---
 
-<small><i>Many of the said lovely people are not in these photos.</i></small>
+[感谢观看《UI界面展示》]().

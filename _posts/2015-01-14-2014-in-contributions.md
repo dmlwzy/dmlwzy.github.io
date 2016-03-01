@@ -75,7 +75,11 @@ title: 麦粒-其产品原型设计的交互思考过程（二）
 我从第一版的设计到现在最后定稿的原型，给大家展示一下，方便大家从整体、从细节查看其中的变化与思考过程：
 ![layout borken by border-boxing](/images/9.png)
 
-For some reasons I did not code at all in the 4 days I spent in Seoul.
+:tada:
+
+---
+
+[感谢阅读《麦粒-其产品原型设计的交互思考过程（二）》]().
 
 
 

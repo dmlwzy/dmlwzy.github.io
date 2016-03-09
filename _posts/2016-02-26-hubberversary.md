@@ -21,7 +21,7 @@ title: 产品交互日志
 <h3 class="title-pictures">Think and Work</h3>
 <div class="photos">
 <ul class="list" data-pjax>
-{% for post in site.posts %}
+{% for post in site.posts1 %}
   <li>
     <a href="{{ post.url }}">
       {{ post.title }}

@@ -22,12 +22,14 @@ title: 产品交互日志
 <div class="photos">
 <ul class="list" data-pjax>
 {% for post in site.posts %}
+{% if post.title == "产品交互日志" %}
   <li>
     <a href="{{ post.url }}">
       {{ post.title }}
       <time>{{ post.date | date: "%b %d, %Y" }}</time>
     </a>
   </li>
+  {% endif %}
   {% endfor %}
 </ul>
 

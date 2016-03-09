@@ -18,7 +18,7 @@ title: 产品交互日志
 
 <br>麦粒不仅仅是一个记录家庭生活的应用程序，麦粒基于家庭关系的建立，通过血缘关系建立家庭视图，家庭族谱，打造详图中国家概念。通过地理关系，建立虚拟社区，实现城市化的线上交流。通过血缘与地理关系的背书，重建基于家庭企业的商业文明。12345678
 
-<h3 class="title-pictures">Think and Workx</h3>
+<h3 class="title-pictures">Think and Workxy</h3>
 <div class="photos">
 <ul class="list" data-pjax>
 {% for post in site.posts %}
@@ -26,7 +26,7 @@ title: 产品交互日志
   <li>
     <a href="{{ post.url }}">
       {{ post.title }}
-      <time>{{ post.date | date: "%b %d, %Y" }}</time>
+     
     </a>
   </li>
   {% endif %}

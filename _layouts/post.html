@@ -37,6 +37,17 @@
   </li>
   {% endfor %}
 </ul>
+ <div class="photos">
+          <ul class="list" data-pjax>
+{% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}">
+      {{ post.title }}
+      <time>{{ post.date | date: "%b %d, %Y" }}</time>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
 <h3 class="title-works">Related websites.</h3>
 <ul class="list">
   <li>

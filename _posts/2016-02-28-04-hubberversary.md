@@ -33,13 +33,12 @@ week 7<mark>用户测试</mark>
 <br>No.1 将线框图用于用户测试
 <br>No.2 在反馈的基础上细化线框
 
-week 8<mark>继续用户测试</mark>
+week 8<mark>继续用户测试</mark> 
 <br>No.1 基于反馈继续优化线框
 
 week 9<mark>ok,继续测试</mark>
 <br>No.1 ok，基于反馈继续优化线框
-
-<br>...yes,我需要不断优化、不断细化线框原型...
+<br><a>...yes,我需要不断优化、不断细化线框原型...</a>
 
 week 10<mark>视觉稿</mark>
 <br>No.1 开始视觉稿设计，有必要时，不断改进线框原型

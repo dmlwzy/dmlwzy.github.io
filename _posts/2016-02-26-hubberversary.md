@@ -46,6 +46,20 @@ title: 产品交互日志(更新中...)
   {% endif %}
   {% endfor %}
 </ul>
+<h3 class="title-pictures">Use technology</h3>
+<div class="photos">
+<ul class="list" data-pjax>
+{% for post in site.posts %}
+{% if post.title == "tech 1" or post.title == "tech 2" or post.title == "tech 3" %}
+<li>
+    <a href="{{ post.url }}">
+      {{ post.title }}
+     
+    </a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
 
 
 

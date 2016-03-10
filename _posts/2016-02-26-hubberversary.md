@@ -22,7 +22,7 @@ title: 产品交互日志(更新中...)
 <div class="photos">
 <ul class="list" data-pjax>
 {% for post in site.posts %}
-{% if post.title == "chang 1" or post.title == "chang 2" post.title == "chang 3" post.title == "chang 4"%}
+{% if post.title == "chang 1" or post.title == "chang 2" or post.title == "chang 3" or post.title == "chang 4" %}
 <li>
     <a href="{{ post.url }}">
       {{ post.title }}
@@ -36,7 +36,7 @@ title: 产品交互日志(更新中...)
 <div class="photos">
 <ul class="list" data-pjax>
 {% for post in site.posts %}
-{% if post.title == "chang 1" or post.title == "chang 2" or post.title == "chang 3" or post.title == "chang 4"%}
+{% if post.title == "chang 1" or post.title == "chang 2" or post.title == "chang 3" or post.title == "chang 4" %}
 <li>
     <a href="{{ post.url }}">
       {{ post.title }}

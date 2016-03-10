@@ -22,7 +22,7 @@ title: 产品交互日志(更新中...)
 <div class="photos">
 <ul class="list" data-pjax>
 {% for post in site.posts %}
-{% if post.title == "1" %}
+{% if post.title == "chang 1" %}
 
 
 

@@ -22,7 +22,11 @@ title: 产品交互日志(更新中...)
 <div class="photos">
 <ul class="list" data-pjax>
 {% for post in site.posts %}
-{% if post.title == "产品交互日志" %}
+{% if post.title == "产品交互日志(更新中...)" and  post.title == "麦粒-其产品原型设计的交互思考过程（一）" and 麦粒-其产品原型设计的交互思考过程（二)” and  post.title == "UI界面展示“
+
+
+
+%}
 
   <li>
     <a href="{{ post.url }}">

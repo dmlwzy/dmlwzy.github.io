@@ -29,6 +29,12 @@ title: chang 1
 
 ---
 
-before（交互方式gif）
-><br>![layout borken by border-boxing](/images/123.gif)
+before（交互方式）
+<br>![layout borken by border-boxing](/images/123.gif)
+
+---
+
+after（交互方式）
+<br>![layout borken by border-boxing](/images/234.gif)
+
 

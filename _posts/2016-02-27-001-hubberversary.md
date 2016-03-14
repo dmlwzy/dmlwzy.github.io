@@ -27,5 +27,8 @@ title: chang 1
 <br><mark>针对”No.1“</mark>，按照正确的记录顺序，我将整个界面分为”3 parts“，part 1【头像、昵称】+part 2【日期、时刻、位置、权限设置点赞（分行显示）】+part 3【用户发表的内容】
 <br><mark>针对”No.2“</mark>，我将照片放大显示，一行只显示一张照片，并且，使两边留有些许适当空白，不至于使界面起来太满太挤，让用户采用滑动方式进行浏览。
 
-![layout borken by border-boxing](/images/123.gif)
+---
+
+before（交互方式gif）
+>![layout borken by border-boxing](/images/123.gif)
 

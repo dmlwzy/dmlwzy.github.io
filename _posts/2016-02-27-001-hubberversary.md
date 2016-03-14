@@ -30,5 +30,5 @@ title: chang 1
 ---
 
 before（交互方式gif）
->![layout borken by border-boxing](/images/123.gif)
+><br>![layout borken by border-boxing](/images/123.gif)
 

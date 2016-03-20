@@ -240,9 +240,24 @@ blockquote {
 }
 
 
- .p0 photo{
-    
+ .photo {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  float: left;
+
+  img {
+    background-color: #f0f0f0;
     width: 50px;
     height: 50px;
-    
+    border-radius: 10px;
   }
+
+  &.p0:hover ~ .c0,
+  &.p1:hover ~ .c1,
+  &.p2:hover ~ .c2,
+  &.p3:hover ~ .c3,
+  &.p4:hover ~ .c4 {
+    display: block;
+  }
+}

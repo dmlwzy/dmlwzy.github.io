@@ -24,7 +24,7 @@ title: 麦粒-产品交互日志(更新中...)
 <div class="photos">
 <ul class="list" data-pjax>
 {% for post in site.posts %}
-{% if post.title == "微记详情-原型设计更改" or post.title == "称呼选择-思考与优化"  %}
+{% if post.title == "微记详情-原型设计更改" or post.title == "称呼选择-思考与优化"  or post.title =="麦粒-其产品原型设计的交互思考过程（一）" or post.title =="麦粒-其产品原型设计的交互思考过程（二）"%}
 <li>
     <a href="{{ post.url }}">
       {{ post.title }}

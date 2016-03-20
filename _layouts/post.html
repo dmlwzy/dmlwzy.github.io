@@ -27,11 +27,13 @@
           I hope that through the simple interface, to give users the best experience.
         <h3 class="title-pictures">Project experience</h3>
         <div class="photos">
-        <ul class="list" data-pjax>
-{% for post in site.posts  %}
- <a  class="p1 photo" target="_blank">
+        <a  class="p1 photo" target="_blank">
                   <img alt="" src="{{ site.baseurl }}/images/abc123.png">
                 </a>
+        <ul class="list" data-pjax>
+
+{% for post in site.posts  %}
+
 {% if post.title == "产品：麦粒【5月上线】(迭代优化中...)"%}
 <li>
     <a href="{{ post.url }}">

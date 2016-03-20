@@ -27,15 +27,10 @@
           I hope that through the simple interface, to give users the best experience.
         <h3 class="title-pictures">Project experience</h3>
         <div class="photos">
-         <a href="https://libscode.com" class="p0 photo" target="_blank">
-<img alt="Kamu butuh Developer, UI/UX? Cuma LibsCode ahlinya." src="{{ site.baseurl }}/images/lc.jpg">
-</a>
-          <ul class="list" data-pjax>
+        <ul class="list" data-pjax>
 {% for post in site.posts  %}
 {% if post.title == "产品：麦粒【5月上线】(迭代优化中...)"%}
-
-
-  <li>
+<li>
     <a href="{{ post.url }}">
       {{ post.title }}
       <time>{{ post.date | date: "%b %d, %Y" }}</time>
@@ -44,6 +39,9 @@
   {% endif %}
   {% endfor %}
 </ul>
+<a href="https://libscode.com" class="p0 photo" target="_blank">
+                  <img alt="Kamu butuh Developer, UI/UX? Cuma LibsCode ahlinya." src="{{ site.baseurl }}/images/lc.jpg">
+                </a>
 <h3 class="title-works">Related websites.</h3>
 <ul class="list">
   <li>

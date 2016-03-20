@@ -29,15 +29,16 @@
         <div class="photos">
         <ul class="list" data-pjax>
 {% for post in site.posts  %}
+ <a  class="p1 photo" target="_blank">
+                  <img alt="" src="{{ site.baseurl }}/images/abc123.png">
+                </a>
 {% if post.title == "产品：麦粒【5月上线】(迭代优化中...)"%}
 <li>
     <a href="{{ post.url }}">
       {{ post.title }}
       <time>{{ post.date | date: "%b %d, %Y" }}</time>
     </a>
-       <a href="" class="p0 photo" target="_blank">
-                  <img alt="" src="{{ site.baseurl }}/images/abc123.png">
-                </a>
+      
                 </li>
   {% endif %}
   {% endfor %}

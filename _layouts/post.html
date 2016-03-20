@@ -35,13 +35,15 @@
       {{ post.title }}
       <time>{{ post.date | date: "%b %d, %Y" }}</time>
     </a>
-
-  </li>
+       <a href="" class="p0 photo" target="_blank">
+                  <img alt="" src="{{ site.baseurl }}/images/abc123.png">
+                </a>
+                </li>
   {% endif %}
   {% endfor %}
 </ul>
-![layout borken by border-boxing](/images/abc123.png)
 </div>
+
 <h3 class="title-works">Related websites.</h3>
 <ul class="list">
   <li>

@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2016-02-26
-title: 麦粒-产品交互日志(更新中...)
+title: 产品：麦粒(更新中...)
 ---
 
 ![layout borken by border-boxing](/images/231.png)
@@ -24,7 +24,7 @@ title: 麦粒-产品交互日志(更新中...)
 <div class="photos">
 <ul class="list" data-pjax>
 {% for post in site.posts %}
-{% if post.title == "微记详情-原型设计更改" or post.title == "称呼选择-思考与优化"  or post.title =="麦粒-其产品原型设计的交互思考过程（一）" or post.title =="麦粒-其产品原型设计的交互思考过程（二）"%}
+{% if post.title == "微记详情-原型设计更改【1.0版本(5月上线)】" or post.title == "称呼选择-思考与优化【1.0版本(5月上线)】"  or post.title =="家庭微记-展示设计交互思考过程(一)【0.1版本】" or post.title =="家庭微记-展示设计交互思考过程(二)【0.1版本】"%}
 <li>
     <a href="{{ post.url }}">
       {{ post.title }}

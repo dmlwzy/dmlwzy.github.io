@@ -1,26 +1,32 @@
-# A blog
+Freelancer Jekyll theme
+=========================
 
-This is where Mu-An writes her stuff and messes around every once in a while. See the messes [here](https://github.com/muan/muan.github.com/releases).
+Jekyll theme based on [Freelancer bootstrap theme ](http://startbootstrap.com/templates/freelancer/)
 
-## Complie
+## How to use
+ - Place a image in `/img/portfolio/`
+ - Replace `you@email.com` in `_includes/contact_static.html` with your email address. refer to [formspree](http://formspree.io/) for more information.
+ - Create posts to display your projects. Use the follow as an example:
+```txt
+---
+layout: default
+modal-id: 1
+date: 2014-07-18
+img: cabin.png
+alt: image-alt
+project-date: July 2014
+client: The Client
+category: Web Development
+description: The description of the project
 
+---
 ```
-$ bundle install
-$ jekyll server -w --baseurl=''
-```
 
-## License
+## Demo
+View this jekyll theme in action [here](https://jeromelachaud.github.io/freelancer-theme)
 
-The following directories and their contents are Copyright Mu-An Chiou. You may not reuse anything therein without my permission:
+## Screenshot
+![screenshot](https://raw.githubusercontent.com/jeromelachaud/freelancer-theme/master/screenshot.png)
 
-```
-_posts/
-images/
-```
-
-All other directories and files are MIT Licensed (where applicable).
-
-## Me
-
-:wave: [@muanchiou](http://twitter.com/muanchiou)
-:panda_face:
+=========
+For more details, read the [documentation](http://jekyllrb.com/)

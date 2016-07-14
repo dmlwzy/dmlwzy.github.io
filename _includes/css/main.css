@@ -58,7 +58,7 @@ hr.star-primary:after {
 }
 
 hr.star-light {
-    border-color: #000;
+    border-color: #fff;
 }
 
 hr.star-light:after {
@@ -326,7 +326,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 footer {
-    color: #fff;
+    color: #000;
 }
 
 footer h3 {

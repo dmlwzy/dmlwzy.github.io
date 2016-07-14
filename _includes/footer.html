@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
-                        <h3>{{ site.footer.location }}</h3>
+                        
                         <p>
                             {% for adress in site.address %}
                                 {{ adress.line }} <br>
@@ -12,7 +12,7 @@
                         </p>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>{{ site.footer.social }}</h3>
+                        
                         <ul class="list-inline">
                             {% for network in site.social %}
                             <li>
@@ -22,9 +22,9 @@
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>{{ site.footer.credits }}</h3>
-                       <p>E-mail：dmlwzy@163.com</p>
-                        <p>WeChat:wzydml</p>
+                       
+                       <p>E-mail：dmlwzy@163.com<br>
+                       WeChat:wzydml</p>
                     </div>
                 </div>
             </div>

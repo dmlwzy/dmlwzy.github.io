@@ -81,7 +81,7 @@ hr.star-primary:after {
 
 header {
     text-align: center;
-    color: #fff;
+    color: #000;
     background: #{{ site.color.primary }};
 }
 
@@ -340,7 +340,7 @@ footer .footer-above {
 
 footer .footer-col {
     margin-bottom: 50px;
-}
+}container
 
 footer .footer-below {
     padding: 25px 0;
